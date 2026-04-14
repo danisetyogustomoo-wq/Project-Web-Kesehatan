@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SehatFood Mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+  <header class="topbar">
+    <a class="logo" href="#hero">SehatFood</a>
+    <nav>
+      <a href="#hero">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#nutrition">Nutrisi</a>
+      <a href="#mood">Mood</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero fade-up">
+    <div class="hero-copy">
+      <p class="eyebrow">Platform Kesehatan Interaktif</p>
+      <h1>Jelajahi nutrisi dan mood untuk gaya hidup lebih sehat.</h1>
+      <p>Website edukasi kesehatan untuk cek kalori, makronutrien, dan mood harian lewat kamera dengan tampilan modern dan bersih.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#nutrition">Cek Nutrisi</a>
+        <a class="btn btn-secondary" href="#mood">Mood Detector</a>
+      </div>
+      <div class="hero-badge">Kesehatan • Nutrisi • Mood</div>
+    </div>
+    <div class="hero-card">
+      <div class="stats-card">
+        <div>
+          <span>20+</span>
+          <p>Jenis makanan</p>
+        </div>
+        <div>
+          <span>5</span>
+          <p>Fitur kesehatan</p>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=768&q=80" alt="Edukasi makanan sehat" />
+    </div>
+  </section>
+
+  <section id="about" class="section section-light fade-up">
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">Tentang Aplikasi</p>
+          <h2>Sistem edukasi kesehatan yang praktis dan responsif.</h2>
+          <p>Website ini membantu pengguna memahami nutrisi makanan dan suasana hati dengan antarmuka yang mudah dipakai.</p>
+          <p>Fitur nutrisi cepat dan mood detector menghadirkan pengalaman digital yang ramah kesehatan.</p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Informasi nutrisi</h3>
+            <p>Temukan nilai kalori, protein, karbohidrat, dan lemak untuk menu harian.</p>
+          </article>
+          <article>
+            <h3>Analisis mood</h3>
+            <p>Gunakan kamera untuk melihat mood dalam tampilan modern dan responsif.</p>
+          </article>
+          <article>
+            <h3>Desain visual</h3>
+            <p>Warna lembut, ilustrasi hidup, dan tipografi profesional membuatnya ideal untuk aplikasi kesehatan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="section section-gradient fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">Fitur Utama</p>
+        <h2>Alat kesehatan digital dalam satu halaman.</h2>
+      </div>
+      <div class="portfolio-grid">
+        <article>
+          <h3>Data nutrisi</h3>
+          <p>Menampilkan kalori, protein, karbohidrat, dan lemak makanan populer dalam sekejap.</p>
+        </article>
+        <article>
+          <h3>Analisis mood</h3>
+          <p>Fitur mood detector kamera untuk membantu menilai suasana hati harian secara visual.</p>
+        </article>
+        <article>
+          <h3>Desain fokus kesehatan</h3>
+          <p>Tampilan bersih, modern, dan mudah digunakan untuk user yang mencari info kesehatan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="nutrition" class="section section-gradient fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">Fitur Nutrisi</p>
+        <h2>Cari kandungan makanan populer</h2>
+      </div>
+      <div class="nutrition-card">
+        <div class="search-panel">
+          <label for="food-search">Cari makanan favorit Anda</label>
+          <input id="food-search" type="text" placeholder="Contoh: Nasi goreng, Smoothie, Pizza, Sup..." autocomplete="off" />
+          <button id="search-btn" class="btn btn-primary">Cek Nutrisi</button>
+          <p class="note">Masukkan nama makanan apapun - kami akan tampilkan estimasi nutrisinya.</p>
+          <div class="food-suggestions">
+            <span>Sugesti:</span>
+            <button type="button" class="chip">Nasi goreng</button>
+            <button type="button" class="chip">Ayam bakar</button>
+            <button type="button" class="chip">Smoothie buah</button>
+            <button type="button" class="chip">Pizza</button>
+          </div>
+        </div>
+        <div class="nutrition-result" id="nutrition-result">
+          <h3>Hasil Nutrisi</h3>
+          <div class="nutrition-list">
+            <p>Pilih makanan untuk melihat detail kandungan di sini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mood" class="section section-light mood-section fade-up">
+      <div class="section-grid reverse-grid">
+        <div>
+          <p class="eyebrow">Mood Detector</p>
+          <h2>Scan wajah dan lihat mood saat ini.</h2>
+          <p>Fitur ini menggunakan kamera untuk melihat mood secara interaktif. Cocok untuk aplikasi kesehatan dan kesejahteraan pengguna.</p>
+          <div class="mood-actions">
+            <button id="start-camera" class="btn btn-secondary">Mulai Kamera</button>
+            <button id="detect-mood" class="btn btn-primary">Deteksi Mood</button>
+            <button id="stop-camera" class="btn btn-secondary">Stop Kamera</button>
+          </div>
+          <div class="mood-result" id="mood-result">
+            <h3>Hasil Mood</h3>
+            <p>Tekan tombol untuk memulai deteksi.</p>
+          </div>
+        </div>
+        <div class="camera-card">
+          <div class="camera-frame">
+            <video id="mood-video" autoplay muted playsinline></video>
+            <div class="camera-overlay">Tap Deteksi untuk melihat mood</div>
+          </div>
+          <p class="note">Kamera akan aktif setelah Anda mengizinkan akses. Fitur ini didesain sebagai demo interaktif untuk kesehatan digital.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-light fade-up">
+      <div class="section-heading">
+        <p class="eyebrow">Kontak</p>
+        <h2>Hubungi untuk kolaborasi kesehatan digital.</h2>
+      </div>
+      <div class="contact-card">
+        <p>Platform ini dibuat untuk menunjukkan konsep digital dalam edukasi kesehatan. Gunakan ini sebagai prototype web kesehatan pribadi.</p>
+        <a href="#" class="btn btn-primary">Hubungi saya</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SehatFood Mood • Platform kesehatan interaktif</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
